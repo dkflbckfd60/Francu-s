@@ -1,0 +1,123 @@
+@charset "UTF-8"; *, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+h1, h2{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+	text-align: center;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+b, strong {font-weight: bolder;}
+strong {display: block;}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.container-fluid{
+    width: 100%;
+    max-width: 1920px;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md, .col-md-5, .col-lg{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+@media (min-width: 768px) {
+.col-md-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+}
+@media (min-width: 992px) {
+ .col-lg{
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+}
+
+.justify-content-center {justify-content: center;}
+.align-items-center {align-items: center;}
+.conditions {padding: 0}
+
+.content {
+    padding-bottom: 65px;
+    padding-top: 65px;
+    max-width: 1200px;
+}
+
+.content h1, h2{
+    font-family: 'Neucha', cursive;
+    font-size: 200%;
+}
+
+.content h1 span, h2 span{
+    display: inline-block;
+    padding-bottom: 40px;
+}
+
+.content h1 span:after, h2 span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: center center no-repeat;
+    bottom: 10px;
+    content: '\A';
+    height: 15px;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px
+}
+
+
+.cake_h {
+    display: block;
+    font-family: 'Neucha', cursive;
+    font-size: 130%
+}
+
+.cake_big_span {
+	display: block;
+    font-family: 'Neucha', cursive;
+    font-size: 210%;
+}
+
+.conditions li {
+    list-style-type: none;
+    margin-bottom: 60px
+}
+
+.conditions .cond_img {
+    display: inline-block;
+    min-height: 100px
+}
+
+.conditions img {
+    display: block;
+    max-width: 90px
+}
